@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha() {
+		
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var anoAtual = 2021;
+	var anoDescobertaDoBrasil = 1500;
+	var idadeMediaDeGeracoes = 28;
+
+	var anosDeBrasil = anoAtual - anoDescobertaDoBrasil;
+	var quantasGeracoes = anosDeBrasil / idadeMediaDeGeracoes;
+
+	mostra("Desde 1500 até o ano atual, quantas gerações se passaram? ");
+	mostra("Se passaram: " + Math.round(quantasGeracoes) + " gerações.");
+
+
+</script>
