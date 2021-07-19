@@ -1,0 +1,44 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+    pincel.fillStyle = "grey";
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(eveto){
+
+        var x = eveto.pageX - tela.offsetLeft;
+        var y = eveto.pageY - tela.offsetTop;
+
+
+        pincel.fillStyle = cores[indiceCoratual];
+        pincel.beginPath();
+        pincel.arc(x, y, 10, 0, 2* 3.14);
+        pincel.fill();
+        console.log(x + "," + y);
+    }
+
+    // Quando click do mouse for acionado a função é ativada
+
+    tela.onclick = desenhaCirculo;
+
+    var cores = ["blue", "red", "green"]
+    
+    var indiceCoratual = 0;
+
+   
+    function trocaCor(){
+
+        indiceCoratual++;
+
+        if(indiceCoratual >= cores.length){
+            indiceCoratual = 0;
+        }
+        return false;
+    }
+
+    tela.oncontextmenu = trocaCor;
+
+</script>
