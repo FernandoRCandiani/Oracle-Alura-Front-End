@@ -1,0 +1,68 @@
+<form id="dados">
+    <button class="botao">Calcula</button>
+    <input class="numero" id="numero">
+    <input class="tabuada" id="tabuada">
+    <span class="resultado"></span>
+</form>
+<tbody id="resultado">
+
+</tbody>
+
+<script>
+
+var botao = document.querySelector(".botao")
+botao.addEventListener('click', function(event){
+    event.preventDefault();
+
+    var form = document.querySelector("#dados");
+
+    var funsoes = obterValores(form);
+    console.log(funsoesTr);
+
+    var funsoesTr = montaTr(funsoes);
+
+    var tabela = document.querySelector(".resultado");
+
+    tabela.appendChild(funsoesTr);
+
+    form.reset();
+
+});
+
+function obterValores(form){
+    var funsoes = {
+        numero: form.numero.value,
+        tabuada: form.tabuada.value,
+        resultado: calculo(form.numero.value, form.tabuada.value)
+    }
+    
+    return funsoes;
+}
+
+function montaTr(funsoes){
+    var funsoesTr = document.createElement("tr");
+    funsoesTr.classList.add("funsoes");
+
+    funsoesTr.appendChild(montaTd(funsoes.resultado, "info-altura"));
+
+
+    return funsoesTr;
+}
+
+function montaTd(dado, classe){
+    var td = document.createElement("td");
+    td.textContent = dado;
+    td.classList.add(classe);
+    
+    return td;
+}
+
+function calculo(numero, tabuada){
+    var resultado = 0;
+
+    resultado = numero * tabuada;
+
+    return resultado;
+}
+
+</script>
