@@ -1,0 +1,26 @@
+.frase {
+    font-size: 20px;
+    height: 130px;
+}
+
+.campoDigitacao {
+    font-size: 20px;
+    height: 130px;
+    border: 3px solid black;
+}
+
+.campoBackground {
+    background-color: lightgray;
+}
+
+.icones {
+    vertical-align: middle;
+}
+
+.bordaVerde {
+    border: 3px solid green;
+}
+
+.bordaVermelha {
+    border: 3px solid red;
+}
