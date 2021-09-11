@@ -1,0 +1,12 @@
+.frase {
+    font-size: 20px;
+}
+
+.campoDigitacao {
+    font-size: 20px;
+    height: 130px;
+}
+
+.campoBackground {
+    background-color: lightgray;
+}
