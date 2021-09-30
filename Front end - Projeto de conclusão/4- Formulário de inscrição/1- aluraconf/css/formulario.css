@@ -1,0 +1,47 @@
+.formulario {
+    margin: 1.5rem;
+}
+
+.formulario_titulo {
+    text-align: center;
+    color: var(--laranja);
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.formulario_cadastro {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.formulario_label {
+    display: block;
+}
+
+.formulario_input {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: var(--sombra-ciano);
+    padding: .5rem;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
+
+.formulario_botao-alinhado {
+    text-align: center;
+}
+
+.formulario_botao {
+    color: var(--branco);
+    font-size: .90rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border-color: var(--cinza-claro);
+    background: var(--ciano);
+    text-transform: uppercase;
+}

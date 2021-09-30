@@ -1,0 +1,25 @@
+.painel {
+    text-align: center;
+    padding-top: 1rem;
+    
+}
+
+.painel_titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    
+}
+
+.painel_subtitulo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding-bottom: 1rem;
+
+}
+
+.painel_texto {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+}

@@ -1,0 +1,40 @@
+.camada {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-shadow: var(--sombra);
+}
+
+.camada_titulo {
+    color: var(--branco);
+    font-size: 2.8rem;
+}
+.camada_subtitulo {
+    color: var(--verde);
+    font-size: 2.25rem;
+    margin-top: .25rem;
+}
+
+.camada_botao{
+    color: var(--branco);
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 1rem 2.25rem;
+    border-radius: 8px;
+    background: var(--ciano);
+    box-shadow: var(--sombra-preto);;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+@media screen and  (min-width: 768px){
+    .camada_titulo{
+        font-size: 6rem;
+    }
+
+    .camada_subtitulo{
+        font-size: 5rem;
+    }
+
+}
