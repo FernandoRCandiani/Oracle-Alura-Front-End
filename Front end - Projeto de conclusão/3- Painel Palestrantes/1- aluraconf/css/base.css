@@ -1,0 +1,16 @@
+/* Variaveis para css */
+:root {
+    --branco: #FFF;
+    --ciano: #48A3A6;
+    --verde: #64FF64;
+    --laranja: #F17E50;
+    --cinza-transparente: rgba(255, 255, 255, 0.1);
+
+    --sombra: 4px 4px 10px #000;
+}
+
+.container {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
