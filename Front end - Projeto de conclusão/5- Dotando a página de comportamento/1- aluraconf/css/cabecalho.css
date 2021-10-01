@@ -1,0 +1,35 @@
+.cabecalho {
+    background: url(../img/destaque.jpeg) no-repeat; /* no-repeat para não repertir imagem */
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.cabecalho_navegacao {
+    text-align: center;
+}
+
+.cabecalho_link {
+    display: inline-block;
+    margin-right: .25rem;
+    margin-left: .25rem;
+}
+
+.cabecalho_botao {
+
+    color: var(--branco);
+    padding: 1rem;
+    background: var(--cinza-transparente);
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+/* Transição de cor do botão */
+.cabecalho_botao:hover {
+    background-color: var(--ciano);
+}
